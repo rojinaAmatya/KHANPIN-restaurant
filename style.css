@@ -39,6 +39,18 @@ body{
 section{
     padding:2rem 9%;
   }
+
+  
+.heading{
+    text-align: center;
+    font-size: 3.5rem;
+    padding:1rem;
+    color:#666;
+  }
+  
+  .heading span{
+    color:var(--font-color1);
+  }
   
   .btn{
     display: inline-block;
@@ -90,7 +102,7 @@ header .logo{
     font-size: 2.5rem;
     font-weight: bolder;
     color: var(--font-color1);
-    padding-right: 55rem;
+    padding-right: 50rem;
 }
 
 header .logo i{
@@ -224,5 +236,109 @@ header .navbar a:hover{
     }
   
   }
+
+  /** How it works section**/
+
+  .step-container{
+      background-color: #34302f;
+  }
+
+  .steps{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding:1rem;
+  }
+
+  .steps .box{
+    flex:1 1 20rem;
+    padding:1rem;
+    text-align: center;
+  }
+
+
+  .steps .box img{
+    border-radius: 50%;
+    border:1rem solid #fff;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+  }
+  
+  .steps .box h3{
+    font-size: 3rem;
+    color:#fff;
+    padding:1rem;
+  }
+
+  .steps .box span{
+    font-size: 2.5rem;
+    color:var(--font-color1);
+    padding:1rem;
+  }
+
+
+  /** Loader section**/
+
+  .loader{
+    position:fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 10000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.7);
+  }
+  
+  .loader p{
+    color: white;
+  }
+  
+  .loader-icone{
+    font-size: 4em;
+    margin-bottom: 50px;
+    color: #99E2D0;
+    animation: rotate 2000ms infinite;
+  }
+  
+  .loader-ellipses{
+    display: flex;
+    width: 100px;
+    justify-content: space-between;
+  }
+  
+  .loader-ellipses span{
+    background-color: #9356DC;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    opacity: 0;
+    animation: loader-grow 2000ms infinite alternate;
+  }
+  
+  .loader-ellipses span:nth-child(2){
+    animation-delay: 400ms;
+  }
+  
+  .loader-ellipses span:nth-child(3){
+    animation-delay: 800ms;
+  }
+  
+  @keyframes loader-grow {
+    to{
+      transform: scale(1.2);
+      background-color: #FF79DA;
+      opacity: 100%;
+    }
+  }
+  
+  @keyframes rotate{
+    to{
+      transform: rotate(360deg);
+    }
+  }
+  
+
+
 
   
