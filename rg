@@ -22,7 +22,7 @@ window.onscroll = () =>{
 }
 
 function loader(){
-  document.querySelector('.loader').classList.add('fade-out');
+  document.querySelector('.loader-container').classList.add('fade-out');
 }
 
 function fadeOut(){
@@ -30,4 +30,3 @@ function fadeOut(){
 }
 
 window.onload = fadeOut();
-

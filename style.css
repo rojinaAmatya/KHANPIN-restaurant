@@ -275,6 +275,24 @@ header .navbar a:hover{
     padding:1rem;
   }
 
+  /**scroll style**/
+  #scroll-top{
+    position: fixed;
+    top:-120%;
+    right:2rem;
+    padding:.5rem 1.5rem;
+    font-size: 4rem;
+    background:var(--font-color1);
+    color:#fff;
+    border-radius: .5rem;
+    transition: 1s linear;
+    z-index: 1000;
+  }
+
+  #scroll-top.active{
+    top:calc(100% - 12rem)
+  }
+
 
   /** Loader section**/
 
