@@ -1,119 +1,361 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>complete responsive food website design tutorial </title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>complete responsive food website design tutorial</title>
 
     <!-- font awesome cdn link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
     <a href="https://storyset.com/work">Work illustrations by Storyset</a>
     <!-- custom css file link  -->
-    <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="http://livejs.com/live.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- header section starts  -->
 
-</head>
-<body>
-    
-<!-- header section starts  -->
+    <!-- home section starts  -->
 
-<!-- home section starts  -->
-
-<section class="home" id="home">
-
-    <div class="content">
+    <section class="home" id="home">
+      <div class="content">
         <h3>Food made with l♥ve</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas accusamus
-         tempore temporibus rem amet laudantium animi optio voluptatum. Natus obcaecati unde 
-        porro nostrum ipsam itaque impedit incidunt rem quisquam eos!</p>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas
+          accusamus tempore temporibus rem amet laudantium animi optio
+          voluptatum. Natus obcaecati unde porro nostrum ipsam itaque impedit
+          incidunt rem quisquam eos!
+        </p>
         <p>1AM - 1PM</p>
         <a href="#" class="btn"> Menu </a>
-    </div>
+      </div>
 
-    <div class="image">
-        <img src="images/Delivery-address.svg" alt="">
-    </div>
-
-</section>
-
-<!-- home section ends -->
-
-<!--steps section-->
-<div class="step-container">
-
-    <h1 class="heading">how it <span>works</span></h1>
-
-    <section class="steps">
-
-        <div class="box">
-            <img src="images/step1.png" alt="">
-            <h3>choose your favorite food</h3>
-        </div>
-        <div class="box">
-            <img src="images/step2.jpg" alt="">
-            <h3>Call us at <span>9827-07-9276</span></h3>
-        </div>
-        <div class="box">
-            <img src="images/step-2.jpg" alt="">
-            <h3>free and fast delivery</h3>
-        </div>
-        <div class="box">
-            <img src="images/step-3.jpg" alt="">
-            <h3>easy payments methods</h3>
-        </div>
-        <div class="box">
-            <img src="images/step-4.jpg" alt="">
-            <h3>and finally, enjoy your food</h3>
-        </div>
-    
+      <div class="image">
+        <img src="images/Delivery-address.svg" alt="" />
+      </div>
     </section>
 
-</div>
+    <!-- home section ends -->
 
-<!--step section ends-->
+    <!--steps section-->
+    <div class="step-container">
+      <h1 class="heading">how it <span>works</span></h1>
 
-<!-- scroll top button  -->
-<a href="#home" class="fas fa-angle-up" id="scroll-top"></a>
+      <section class="steps">
+        <div class="box">
+          <img src="images/step1.png" alt="" />
+          <h3>choose your favorite food</h3>
+        </div>
+        <div class="box">
+          <img src="images/step2.jpg" alt="" />
+          <h3>Call us at <span>9827-07-9276</span></h3>
+        </div>
+        <div class="box">
+          <img src="images/step-2.jpg" alt="" />
+          <h3>free and fast delivery</h3>
+        </div>
+        <div class="box">
+          <img src="images/step-3.jpg" alt="" />
+          <h3>easy payments methods</h3>
+        </div>
+        <div class="box">
+          <img src="images/step-4.jpg" alt="" />
+          <h3>and finally, enjoy your food</h3>
+        </div>
+      </section>
+    </div>
 
-<!-- loader  -->
-<div class="loader">
+    <!--step section ends-->
 
-  <i class="fas fa-utensils loader-icone"></i>
-  <p>Loading</p>
-  <div class="loader-ellipses">
-  
-    <span></span>
-    <span></span>
-    <span></span>
-    
-  </div>
+    <!--Menu Section-->
+    <div class="menu-container">
+      <h1 class="heading">What We <span>Serve</span></h1>
 
-</div>
-<!--Loader ends-->
+      <section class="menu-section sec-padding" id="our-menu">
+        <div class="row">
+          <div class="menu-tabs">
+            <button
+              type="button"
+              class="menu-tab-items active"
+              data-target="#Starter"
+            >
+              Starter
+            </button>
+            <button type="button" class="menu-tab-items" data-target="#Special">
+              Special
+            </button>
+            <button type="button" class="menu-tab-items" data-target="#combo">
+              Combo
+            </button>
+            <button type="button" class="menu-tab-items" data-target="#quick">
+              Entree
+            </button>
+            <button type="button" class="menu-tab-items" data-target="#add-on">
+              Add-Ons(Papad)
+            </button>
+          </div>
+        </div>
 
-<header>
+        <!--Starter menu list begins-->
+        <div class="row menu-tab-content active" id="Starter">
+          <div class="menu-item">
+            <div class="menu-item-name">Khanpin Chatpatey Special</div>
+            <div class="menu-item-price">Rs.100</div>
+            <div class="menu-item-description">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+              nonummy.
+            </div>
+          </div>
 
-    <a href="#" class="logo"> <i class="fas fa-utensils"></i>KHANPIN</a>
+          <div class="menu-item">
+            <div class="menu-item-name">French Fires</div>
+            <div class="menu-item-price">Rs.150</div>
+            <div class="menu-item-description">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+              nonummy.
+            </div>
+          </div>
 
-    <div id="menu-bar" class="fas fa-bars"></div>
+          <div class="menu-item">
+            <div class="menu-item-name">Aalu Sadheko</div>
+            <div class="menu-item-price">Rs.150</div>
+            <div class="menu-item-description">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+              nonummy.
+            </div>
+          </div>
 
-    <nav class="navbar">
+          <div class="menu-item">
+            <div class="menu-item-name">Peanuts Sadheko</div>
+            <div class="menu-item-price">Rs.150</div>
+            <div class="menu-item-description">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+              nonummy.
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-name">Veg. Pakoda</div>
+            <div class="menu-item-price">Rs.120</div>
+            <div class="menu-item-description">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+              nonummy.
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-name">Mushroom Pakoda</div>
+            <div class="menu-item-price">Rs.180</div>
+            <div class="menu-item-description">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+              nonummy.
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-name">Paneer Pakoda</div>
+            <div class="menu-item-price">Rs.180</div>
+            <div class="menu-item-description">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+              nonummy.
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-name">Paneer Chilly</div>
+            <div class="menu-item-price">Rs.280</div>
+            <div class="menu-item-description">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+              nonummy.
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-name">Bhatmas Sadheko</div>
+            <div class="menu-item-price">Rs.120</div>
+            <div class="menu-item-description">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+              nonummy.
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-name">Green Salad</div>
+            <div class="menu-item-price">Rs.100</div>
+            <div class="menu-item-description">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+              nonummy.
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-name">Fruit Salad</div>
+            <div class="menu-item-price">Rs.200</div>
+            <div class="menu-item-description">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+              nonummy.
+            </div>
+          </div>
+        </div>
+        <!--Starter Menu ends-->
+
+        <div class="row menu-tab-content" id="Special">
+          <div class="menu-item">
+            <div class="menu-item-name">KFC</div>
+            <div class="menu-item-price">Rs.450</div>
+            <div class="menu-item-description">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+              nonummy.
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-name">Taipo MO:MO</div>
+            <div class="menu-item-price">Rs.180</div>
+            <div class="menu-item-description">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+              nonummy.
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-name">Chilly Chicken</div>
+            <div class="menu-item-price">Rs.220</div>
+            <div class="menu-item-description">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+              nonummy.
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-name">Chicken Lolipop</div>
+            <div class="menu-item-price">Rs.240</div>
+            <div class="menu-item-description">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+              nonummy.
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-name">Chicken Tass</div>
+            <div class="menu-item-price">Rs.220</div>
+            <div class="menu-item-description">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+              nonummy.
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-name">Dragon Wings</div>
+            <div class="menu-item-price">Rs.300</div>
+            <div class="menu-item-description">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+              nonummy.
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-name">Grilled Fish</div>
+            <div class="menu-item-price">Rs.350</div>
+            <div class="menu-item-description">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+              nonummy.
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-name">Mutton Pakku</div>
+            <div class="menu-item-price">Rs.300</div>
+            <div class="menu-item-description">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+              nonummy.
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-name">Mutton Tass</div>
+            <div class="menu-item-price">Rs.320</div>
+            <div class="menu-item-description">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+              nonummy.
+            </div>
+          </div>
+        </div>
+
+        <div class="row menu-tab-content" id="combo">
+          <div class="menu-item">
+            <div class="menu-item-name">VEG Pack</div>
+            <div class="menu-item-price">Rs.500</div>
+            <div class="menu-item-description">
+              MO:MO (2 plates), Noodles, Fried Rice, French Fries, and Veg.
+              Pakoda
+            </div>
+          </div>
+        </div>
+
+        <div class="row menu-tab-content" id="add-on">
+          <div class="menu-item">
+            <div class="menu-item-name">Dry</div>
+            <div class="menu-item-price">Rs.70</div>
+            <div class="menu-item-description">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+              nonummy.
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-name">Fry</div>
+            <div class="menu-item-price">Rs.80</div>
+            <div class="menu-item-description">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+              nonummy.
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-name">Masala</div>
+            <div class="menu-item-price">Rs.140</div>
+            <div class="menu-item-description">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+              nonummy.
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- scroll top button  -->
+    <a href="#home" class="fas fa-angle-up" id="scroll-top"></a>
+
+    <!-- loader  -->
+    <div class="loader">
+      <i class="fas fa-utensils loader-icone"></i>
+      <p>Loading</p>
+      <div class="loader-ellipses">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <!--Loader ends-->
+
+    <header>
+      <a href="#" class="logo"> <i class="fas fa-utensils"></i>KHANPIN</a>
+
+      <div id="menu-bar" class="fas fa-bars"></div>
+
+      <nav class="navbar">
         <a href="#home">Home</a>
         <a href="#steps">How it works</a>
         <a href="#menu">Menu</a>
         <a href="#contact">Contact</a>
-    </nav>
-
-</header>
-<!-- custom js file link  -->
-<script src="script.js"></script>
-<!--Adding live script to reload whenever changes are saved-->
-
-
-<script type='text/javascript'>document.addEventListener('DOMContentLoaded', 
-function () {window.setTimeout(document.querySelector('svg').classList.add('animated'),1000);})
-</script>
-
-
-</body>
+      </nav>
+    </header>
+    <!-- custom js file link  -->
+    <script src="script.js"></script>
+    <!--Adding live script to reload whenever changes are saved-->
+    <script type="text/javascript" src="http://livejs.com/live.js"></script>
+  </body>
 </html>
