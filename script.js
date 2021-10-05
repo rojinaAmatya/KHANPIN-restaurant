@@ -17,16 +17,6 @@ window.onscroll = () => {
   }
 };
 
-function loader() {
-  document.querySelector(".loader").classList.add("fade-out");
-}
-
-function fadeOut() {
-  setInterval(loader, 3000);
-}
-
-window.onload = fadeOut();
-
 /*- function for menu switch */
 const menuTabs = document.querySelector(".menu-tabs");
 menuTabs.addEventListener("click", function (e) {
@@ -44,3 +34,5 @@ menuTabs.addEventListener("click", function (e) {
     menuSection.querySelector(target).classList.add("active");
   }
 });
+
+$("h5 span:first-child").after('<span class="dots"> </span>');

@@ -1,16 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Paytone+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap");
 
 :root {
   --red: #ff3838;
   --font-color1: #f38538;
   --logo-color: #666;
   --white-color: #fff;
+  --main-color: #7359be;
+  --font-color2: #3a3157;
+  --color2: #f6bbb2;
 }
 
 * {
-  font-family: "Nunito", sans-serif;
+  font-family: "Open Sans", sans-seriff;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -43,20 +46,25 @@ section {
 
 .heading {
   text-align: center;
-  font-size: 3.5rem;
+  font-size: 4.5rem;
   padding: 1rem;
-  color: #666;
+  color: var(--font-color2);
+  font-family: "Paytone One", sans-serif;
+  text-transform: none;
+  letter-spacing: 0.5rem;
 }
 
 .heading span {
-  color: var(--font-color1);
+  font-family: "Paytone One", sans-serif;
+  color: var(--font-color2);
+  text-transform: none;
 }
 
 .btn {
   display: inline-block;
   padding: 0.8rem 3rem;
-  border: 0.2rem solid var(--font-color1);
-  color: var(--font-color1);
+  border: 0.2rem solid var(--main-color);
+  color: var(--main-color);
   cursor: pointer;
   font-size: 1.7rem;
   border-radius: 0.5rem;
@@ -73,7 +81,7 @@ section {
   right: 0;
   width: 0%;
   height: 100%;
-  background: var(--font-color1);
+  background: var(--main-color);
   transition: 0.3s linear;
   z-index: -1;
 }
@@ -96,7 +104,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: var(--white-color);
+  background: none;
+
   padding: 2rem 9%;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
@@ -104,23 +113,23 @@ header {
 header .logo {
   font-size: 2.5rem;
   font-weight: bolder;
-  color: var(--font-color1);
-  padding-right: 50rem;
+  color: var(--main-color);
+  padding-right: 4rem;
 }
 
 header .logo i {
   padding-right: 0.5rem;
-  color: var(--logo-color);
+  color: var(--font-color2);
 }
 
 header .navbar a {
   font-size: 2rem;
   margin-left: 2rem;
-  color: var(--logo-color);
+  color: var(--font-color2);
 }
 
 header .navbar a:hover {
-  color: var(--red);
+  color: var(--main-color);
 }
 
 #menu-bar {
@@ -155,8 +164,8 @@ header .navbar a:hover {
 
 .home .image img {
   width: 100%;
-  padding: 1rem;
-  animation: float 3s linear infinite;
+
+  /*animation: float 3s linear infinite;*/
 }
 
 @keyframes float {
@@ -170,14 +179,21 @@ header .navbar a:hover {
 }
 
 .home .content h3 {
-  font-size: 6rem;
-  color: #333;
-  font-family: "Fredoka One", cursive;
+  font-size: 5.5rem;
+  color: var(--font-color2);
+  font-family: "Paytone One", sans-serif;
+  letter-spacing: 0.5rem;
+  text-transform: none;
+}
+.home .content h3 span {
+  font-size: 7rem;
+  color: var(--main-color);
+  font-family: "Paytone One", sans-serif;
 }
 
 .home .content p {
   font-size: 1.7rem;
-  color: #666;
+  color: var(--font-color2);
   padding: 1rem 0;
 }
 
@@ -237,7 +253,7 @@ header .navbar a:hover {
 /** How it works section**/
 
 .step-container {
-  background-color: #222430;
+  background-color: white;
 }
 
 .steps {
@@ -261,15 +277,34 @@ header .navbar a:hover {
 
 .steps .box h3 {
   font-size: 2rem;
-  color: #fff;
+  color: var(--main-color);
   padding: 1rem;
 }
 
 .steps .box span {
   font-size: 2rem;
-  color: var(--font-color1);
+  color: var(--font-color2);
   padding: 1rem;
 }
+
+/**
+.steps .box x{
+  width: 60px;
+  height: 60px;
+  padding: 8px;
+  line-height: 1;
+  top: -15px;
+  right: -15px;
+  border-radius: 50%;
+  color: #fff;
+  text-transform: uppercase;
+  border: 4px solid #fff;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background: #57277e;
+}
+**/
 
 /**scroll style**/
 #scroll-top {
@@ -278,7 +313,7 @@ header .navbar a:hover {
   right: 2rem;
   padding: 0.5rem 1.5rem;
   font-size: 4rem;
-  background: var(--font-color1);
+  background: var(--main-color);
   color: #fff;
   border-radius: 0.5rem;
   transition: 1s linear;
@@ -367,13 +402,13 @@ header .navbar a:hover {
 }
 
 .menu-tab-items {
-  font-size: 18px;
+  font-size: 20px;
   font-family: inherit;
   text-transform: capitalize;
   border: none;
   background-color: transparent;
   font-weight: 500;
-  color: var(--font-color1);
+  color: var(--main-color);
   cursor: pointer;
   margin: 0 10px 10px;
   transition: color 0.3s ease;
@@ -429,4 +464,68 @@ header .navbar a:hover {
 
 .menu-tab-content.active {
   display: inline;
+}
+
+/* for entre css */
+.container {
+  width: 50%;
+  margin: 1em auto;
+  border: 1px solid #ddd;
+  padding: 0.3em 0.6em;
+}
+.container:after,
+.container:before {
+  display: table;
+  content: " ";
+  line-height: 0;
+  font-size: 0;
+  clear: both;
+}
+.container p {
+  font-size: 0.9em;
+  color: black;
+  margin-bottom: 1.5em;
+  font-style: italic;
+}
+​ .group-header {
+  float: left;
+  font-weight: 700;
+  width: 50%;
+  margin: 0.7em 0 1em 0;
+}
+
+.group-header span {
+  float: left;
+  width: 50%;
+  color: red;
+  text-align: center;
+  display: block;
+}
+​ h5 {
+  position: relative;
+  font-weight: 700;
+  margin: 0.7em 0 1em 0;
+}
+h5:after,
+h5:before {
+  display: table;
+  content: " ";
+  line-height: 0;
+  font-size: 0;
+  clear: both;
+}
+h5 span {
+  float: left;
+  width: 10%;
+  text-align: center;
+  display: block;
+}
+h5 span:first-child {
+  width: 40%;
+  text-align: left;
+}
+h5 .dots {
+  width: 40%;
+  border-bottom: 7px dotted black;
+  margin-top: 0.8em;
 }
